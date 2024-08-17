@@ -89,7 +89,7 @@ banksEmployeesClaimsMerge.to_parquet("C:/Users/anack/OneDrive/Documentos/Pós_eE
 db = mysql.connect(
      host = "localhost",
      user = "root",
-     passwd = "benji",
+     passwd = "*",
  )
 
 # cursor = db.cursor()

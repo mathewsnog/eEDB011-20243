@@ -1,4 +1,3 @@
-#from IPython.display import display
 from pyspark.sql import SparkSession
 from pyspark.sql.types import *
 
@@ -18,6 +17,27 @@ df = spark.read.format("csv")\
       .csv(sourcepathbancos)
 
 df.write.mode("overwrite").parquet(outputpath + "\\bancos")
+
+# read empregados
+dfemp1 = spark.read.options(header='True', delimiter='|').csv(r"C:\Users\teu20\Documents\Poli\Dados\Source\empregados\glassdoor_consolidado_join_match_v2.csv")
+dfemp2 = spark.read.options(header='True', delimiter='|').csv(r"C:\Users\teu20\Documents\Poli\Dados\Source\empregados\glassdoor_consolidado_join_match_less_v2.csv")
+dfempfinal = dfemp1.unionByName(dfemp2, allowMissingColumns=True)
+dfempfinal.write.mode("overwrite").parquet(outputpath + "\\empregados")
+
+
+# read reclamacoes
+df3 = spark.read.format("csv")\
+      .option("recursiveFileLookup", True)\
+      .option("header", True)\
+      .option("delimiter", ";")\
+      .option("enconding", "ISO-8859-1")\
+      .csv(sourcepathreclamacoes)
+df3 = df3.drop("_c14")
+
+df3.write.mode("overwrite").parquet(outputpath + "\\reclamacoes")
+
+spark.stop()
+
 
 # empregadossch = StructType ([StructField('employer_name',StringType(),True),
 #  StructField('reviews_count',StringType(),True),
@@ -55,23 +75,3 @@ df.write.mode("overwrite").parquet(outputpath + "\\bancos")
 # df2.printSchema()
 
 # df2.show()
-
-# read empregados
-dfemp1 = spark.read.options(header='True', delimiter='|').csv(r"C:\Users\teu20\Documents\Poli\Dados\Source\empregados\glassdoor_consolidado_join_match_v2.csv")
-dfemp2 = spark.read.options(header='True', delimiter='|').csv(r"C:\Users\teu20\Documents\Poli\Dados\Source\empregados\glassdoor_consolidado_join_match_less_v2.csv")
-dfempfinal = dfemp1.unionByName(dfemp2, allowMissingColumns=True)
-dfempfinal.write.mode("overwrite").parquet(outputpath + "\\empregados")
-
-
-# read reclamacoes
-df3 = spark.read.format("csv")\
-      .option("recursiveFileLookup", True)\
-      .option("header", True)\
-      .option("delimiter", ";")\
-      .option("enconding", "ISO-8859-1")\
-      .csv(sourcepathreclamacoes)
-df3 = df3.drop("_c14")
-
-df3.write.mode("overwrite").parquet(outputpath + "\\reclamacoes")
-
-spark.stop()

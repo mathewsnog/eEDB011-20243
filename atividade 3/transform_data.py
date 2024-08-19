@@ -9,8 +9,8 @@ outputpath = "C:\\Users\\teu20\\Documents\\Poli\\Dados\\Trusted"
 url = "jdbc:mysql://localhost:3306/mydb"
 
 myproperties = {
-    "user": "root",
-    "password": "Ejwkh24$",
+    "user": "xxxx",
+    "password": "xxxxx$",
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 

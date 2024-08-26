@@ -30,7 +30,7 @@ df3 = spark.read.format("csv")\
       .option("recursiveFileLookup", True)\
       .option("header", True)\
       .option("delimiter", ";")\
-      .option("enconding", "ISO-8859-1")\
+      .option("enconding", "cp1252")\
       .csv(sourcepathreclamacoes)
 df3 = df3.drop("_c14")
 

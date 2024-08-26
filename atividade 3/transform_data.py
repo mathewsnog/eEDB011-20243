@@ -9,8 +9,8 @@ outputpath = "C:\\Users\\teu20\\Documents\\Poli\\Dados\\Trusted"
 url = "jdbc:mysql://localhost:3306/mydb"
 
 myproperties = {
-    "user": "xxxx",
-    "password": "xxxxx$",
+    "user": "root",
+    "password": "Ejwkh24$",
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
@@ -47,7 +47,7 @@ dfinnername = dfbancos.join(dfempregados, dfempregados.nome == dfbancos.nome, 'i
 dfreclamacoes = spark.read\
     .option("header","true")\
     .option("recursiveFileLookup","true")\
-    .option("enconding", "ISO-8859-1")\
+    .option("enconding", "cp1252")\
     .parquet(sourcepathreclamacoes)
 
 for col in dfreclamacoes.columns:

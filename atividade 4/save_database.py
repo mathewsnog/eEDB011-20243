@@ -42,17 +42,19 @@ dfreclamacoes = spark.read\
     .option("enconding", "ISO-8859-1")\
     .parquet(sourcepathreclamacoes)
 
-dfreclamacoes =    dfreclamacoes.withColumnRenamed(dfreclamacoes.columns[6], "indice")\
-    .withColumnRenamed(dfreclamacoes.columns[5], "instituicao_financeira")\
-    .withColumnRenamed(dfreclamacoes.columns[7], "quantidade_reclamacoes_reguladas_procedentes")\
-    .withColumnRenamed(dfreclamacoes.columns[8], "quantidade_reclamacoes_reguladas_outras")\
-    .withColumnRenamed(dfreclamacoes.columns[9], "quantidade_reclamacoes_nao_reguladas")\
-    .withColumnRenamed(dfreclamacoes.columns[10], "quantidade_total_reclamacoes")\
-    .withColumnRenamed(dfreclamacoes.columns[11], "quantidade_total_clientes_ccs_scr")\
-    .withColumnRenamed(dfreclamacoes.columns[12], "quantidade_clientes_ccs")\
-    .withColumnRenamed(dfreclamacoes.columns[13], "quantidade_clientes_scr")
-    
 dfreclamacoes.write.jdbc(url, "reclamacoes", mode="overwrite", properties=myproperties)
+
+# dfreclamacoes =    dfreclamacoes.withColumnRenamed(dfreclamacoes.columns[6], "indice")\
+#     .withColumnRenamed(dfreclamacoes.columns[5], "instituicao_financeira")\
+#     .withColumnRenamed(dfreclamacoes.columns[7], "quantidade_reclamacoes_reguladas_procedentes")\
+#     .withColumnRenamed(dfreclamacoes.columns[8], "quantidade_reclamacoes_reguladas_outras")\
+#     .withColumnRenamed(dfreclamacoes.columns[9], "quantidade_reclamacoes_nao_reguladas")\
+#     .withColumnRenamed(dfreclamacoes.columns[10], "quantidade_total_reclamacoes")\
+#     .withColumnRenamed(dfreclamacoes.columns[11], "quantidade_total_clientes_ccs_scr")\
+#     .withColumnRenamed(dfreclamacoes.columns[12], "quantidade_clientes_ccs")\
+#     .withColumnRenamed(dfreclamacoes.columns[13], "quantidade_clientes_scr")
+    
+
 #dfinnerfinal.write.mode("overwrite").parquet(outputpath + "\\final")
 #dfinnerfinal.show()
 #dfinnerfinal.printSchema()

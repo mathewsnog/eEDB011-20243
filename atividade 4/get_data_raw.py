@@ -1,5 +1,6 @@
 from pyspark.sql import SparkSession
-from pyspark.sql.types import *
+import pyspark.sql.types as T 
+import pyspark.sql.functions as F
 
 sourcepathbancos = "C:\\Users\\teu20\\Documents\\Poli\\Dados\\Source\\bancos"
 sourcepathempregados = "C:\\Users\\teu20\\Documents\\Poli\\Dados\\Source\\empregados"
@@ -26,13 +27,13 @@ dfempfinal.write.mode("overwrite").parquet(outputpath + "\\empregados")
 
 
 # read reclamacoes
-df3 = spark.read.format("csv")\
-      .option("recursiveFileLookup", True)\
+df3 = spark.read.option("recursiveFileLookup", True)\
       .option("header", True)\
       .option("delimiter", ";")\
-      .option("enconding", "cp1252")\
+      .option("encoding", "ISO-8859-1")\
       .csv(sourcepathreclamacoes)
 df3 = df3.drop("_c14")
+df3.show(truncate = False)
 
 df3.write.mode("overwrite").parquet(outputpath + "\\reclamacoes")
 

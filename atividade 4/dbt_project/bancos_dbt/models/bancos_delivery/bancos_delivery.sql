@@ -33,6 +33,6 @@ SELECT
 ,et.recomendam_para_outras_pessoas
 ,et.perspectiva_positiva_da_empresa
 ,et.match_percent
-FROM {{ ref('reclamacoes_trusted') }} bt  
-INNER JOIN {{ ref('bancos_trusted') }} rt ON rt.cnpj = bt.cnpj  
-INNER JOIN {{ ref('empregados_trusted') }} et ON bt.nome_banco = et.nome_banco
+FROM {{ ref('bancos_trusted') }} rt  
+INNER JOIN {{ ref('empregados_trusted') }} et ON rt.nome_banco = et.nome_banco
+INNER JOIN {{ ref('reclamacoes_trusted') }} bt ON rt.cnpj = bt.cnpj

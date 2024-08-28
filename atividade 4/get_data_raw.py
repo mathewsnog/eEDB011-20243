@@ -15,6 +15,7 @@ df = spark.read.format("csv")\
       .option("recursiveFileLookup", True)\
       .option("header", True)\
       .option("delimiter", "\t")\
+      .option("encoding", "ISO-8859-1")\
       .csv(sourcepathbancos)
 
 df.write.mode("overwrite").parquet(outputpath + "\\bancos")

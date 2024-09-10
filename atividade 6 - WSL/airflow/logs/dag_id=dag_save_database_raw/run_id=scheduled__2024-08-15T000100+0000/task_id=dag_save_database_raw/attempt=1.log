@@ -1,0 +1,34 @@
+[2024-09-08T19:06:15.276-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-08T19:06:15.288-0300] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_save_database_raw.dag_save_database_raw scheduled__2024-08-15T00:01:00+00:00 [queued]>
+[2024-09-08T19:06:15.296-0300] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_save_database_raw.dag_save_database_raw scheduled__2024-08-15T00:01:00+00:00 [queued]>
+[2024-09-08T19:06:15.297-0300] {taskinstance.py:2865} INFO - Starting attempt 1 of 11
+[2024-09-08T19:06:15.323-0300] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): dag_save_database_raw> on 2024-08-15 00:01:00+00:00
+[2024-09-08T19:06:15.326-0300] {standard_task_runner.py:72} INFO - Started process 71661 to run task
+[2024-09-08T19:06:15.328-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dag_save_database_raw', 'dag_save_database_raw', 'scheduled__2024-08-15T00:01:00+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/dag_save_database_raw.py', '--cfg-path', '/tmp/tmpi63tfd9y']
+[2024-09-08T19:06:15.329-0300] {standard_task_runner.py:105} INFO - Job 23: Subtask dag_save_database_raw
+[2024-09-08T19:06:15.381-0300] {task_command.py:467} INFO - Running <TaskInstance: dag_save_database_raw.dag_save_database_raw scheduled__2024-08-15T00:01:00+00:00 [running]> on host DESKTOP-0CT35O1.
+[2024-09-08T19:06:15.455-0300] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Matheus' AIRFLOW_CTX_DAG_ID='dag_save_database_raw' AIRFLOW_CTX_TASK_ID='dag_save_database_raw' AIRFLOW_CTX_EXECUTION_DATE='2024-08-15T00:01:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-15T00:01:00+00:00'
+[2024-09-08T19:06:15.457-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-08T19:06:15.458-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-08T19:06:15.459-0300] {logging_mixin.py:190} INFO - Current task name:dag_save_database_raw state:running start_date:2024-09-08 22:06:15.289734+00:00
+[2024-09-08T19:06:15.460-0300] {logging_mixin.py:190} INFO - Dag name:dag_save_database_raw and current dag run status:running
+[2024-09-08T19:06:15.461-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-08T19:06:15.463-0300] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-08T19:06:15.464-0300] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "python '/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/save_database.py'"]
+[2024-09-08T19:06:15.469-0300] {subprocess.py:86} INFO - Output:
+[2024-09-08T19:06:20.177-0300] {subprocess.py:93} INFO - 24/09/08 19:06:20 WARN Utils: Your hostname, DESKTOP-0CT35O1 resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+[2024-09-08T19:06:20.180-0300] {subprocess.py:93} INFO - 24/09/08 19:06:20 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2024-09-08T19:06:20.677-0300] {subprocess.py:93} INFO - 24/09/08 19:06:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-09-08T19:06:20.834-0300] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2024-09-08T19:06:20.835-0300] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2024-09-08T19:06:27.971-0300] {subprocess.py:93} INFO - [Stage 1:>                                                          (0 + 1) / 1]                                                                                24/09/08 19:06:27 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[2024-09-08T19:06:29.469-0300] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-08T19:06:29.500-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-08T19:06:29.502-0300] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=dag_save_database_raw, task_id=dag_save_database_raw, run_id=scheduled__2024-08-15T00:01:00+00:00, execution_date=20240815T000100, start_date=20240908T220615, end_date=20240908T220629
+[2024-09-08T19:06:29.523-0300] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-08T19:06:29.524-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-08T19:06:29.525-0300] {logging_mixin.py:190} INFO - Dag name:dag_save_database_raw queued_at:2024-09-08 22:06:01.458391+00:00
+[2024-09-08T19:06:29.526-0300] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-0CT35O1. operator:BashOperator
+[2024-09-08T19:06:29.538-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-08T19:06:29.549-0300] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-08T19:06:29.550-0300] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,12 @@
+data_source mysql:
+  type: mysql
+  host: 172.18.48.1
+  username: wsl_root
+  password: Ejwkh24$
+  database: mydb_delivery
+  dataset: bancos_delivery
+
+soda_cloud:
+  host: cloud.us.soda.io
+  api_key_id: b6df5fc0-a61d-4ec6-be1a-c187e491eea3
+  api_key_secret: nvE1AX-3gebNPO-PbvPpuljri3miJFu2BPE9cexw7pEG5MqInPW3vQ

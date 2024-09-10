@@ -1,0 +1,6 @@
+checks for bancos_delivery:
+  - row_count = 11
+  - duplicate_count(cnpj) = 0
+  - schema:
+      fail:
+        when required column missing: [cnpj]

@@ -1,0 +1,34 @@
+[2024-09-09T17:46:48.751-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-09T17:46:48.762-0300] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: get_data_raw.get_data_raw scheduled__2024-08-10T08:15:00+00:00 [queued]>
+[2024-09-09T17:46:48.769-0300] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: get_data_raw.get_data_raw scheduled__2024-08-10T08:15:00+00:00 [queued]>
+[2024-09-09T17:46:48.770-0300] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-09-09T17:46:48.792-0300] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): get_data_raw> on 2024-08-10 08:15:00+00:00
+[2024-09-09T17:46:48.795-0300] {standard_task_runner.py:72} INFO - Started process 161886 to run task
+[2024-09-09T17:46:48.797-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'get_data_raw', 'get_data_raw', 'scheduled__2024-08-10T08:15:00+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/dag_get_data_raw.py', '--cfg-path', '/tmp/tmpttqyvk35']
+[2024-09-09T17:46:48.798-0300] {standard_task_runner.py:105} INFO - Job 40: Subtask get_data_raw
+[2024-09-09T17:46:48.854-0300] {task_command.py:467} INFO - Running <TaskInstance: get_data_raw.get_data_raw scheduled__2024-08-10T08:15:00+00:00 [running]> on host DESKTOP-0CT35O1.
+[2024-09-09T17:46:48.940-0300] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Matheus' AIRFLOW_CTX_DAG_ID='get_data_raw' AIRFLOW_CTX_TASK_ID='get_data_raw' AIRFLOW_CTX_EXECUTION_DATE='2024-08-10T08:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-10T08:15:00+00:00'
+[2024-09-09T17:46:48.942-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-09T17:46:48.943-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-09T17:46:48.944-0300] {logging_mixin.py:190} INFO - Current task name:get_data_raw state:running start_date:2024-09-09 20:46:48.763125+00:00
+[2024-09-09T17:46:48.946-0300] {logging_mixin.py:190} INFO - Dag name:get_data_raw and current dag run status:running
+[2024-09-09T17:46:48.947-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-09T17:46:48.949-0300] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-09T17:46:48.950-0300] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "python '/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/get_data_raw.py'"]
+[2024-09-09T17:46:48.955-0300] {subprocess.py:86} INFO - Output:
+[2024-09-09T17:46:53.949-0300] {subprocess.py:93} INFO - 24/09/09 17:46:53 WARN Utils: Your hostname, DESKTOP-0CT35O1 resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+[2024-09-09T17:46:53.952-0300] {subprocess.py:93} INFO - 24/09/09 17:46:53 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2024-09-09T17:46:54.392-0300] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2024-09-09T17:46:54.393-0300] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2024-09-09T17:46:54.619-0300] {subprocess.py:93} INFO - 24/09/09 17:46:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-09-09T17:47:05.237-0300] {subprocess.py:93} INFO - [Stage 1:>                                                          (0 + 1) / 1]
+[2024-09-09T17:47:05.238-0300] {subprocess.py:97} INFO - Command exited with return code 0
+[2024-09-09T17:47:05.269-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-09T17:47:05.270-0300] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=get_data_raw, task_id=get_data_raw, run_id=scheduled__2024-08-10T08:15:00+00:00, execution_date=20240810T081500, start_date=20240909T204648, end_date=20240909T204705
+[2024-09-09T17:47:05.290-0300] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-09-09T17:47:05.291-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-09-09T17:47:05.292-0300] {logging_mixin.py:190} INFO - Dag name:get_data_raw queued_at:2024-09-09 20:46:34.709973+00:00
+[2024-09-09T17:47:05.293-0300] {logging_mixin.py:190} INFO - Task hostname:DESKTOP-0CT35O1. operator:BashOperator
+[2024-09-09T17:47:05.336-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-09-09T17:47:05.348-0300] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-09T17:47:05.350-0300] {local_task_job_runner.py:245} INFO - ::endgroup::

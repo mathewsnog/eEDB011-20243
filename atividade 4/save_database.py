@@ -1,5 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
+from pyspark.sql.types import *
 #import re
 
 sourcepathbancos = "C:\\Users\\teu20\\Documents\\Poli\\Dados\\Raw\\bancos"
@@ -9,8 +10,8 @@ outputpath = "C:\\Users\\teu20\\Documents\\Poli\\Dados\\Trusted"
 url = "jdbc:mysql://localhost:3306/mydb"
 
 myproperties = {
-    "user": "xxxx",
-    "password": "xxxx",
+    "user": "root",
+    "password": "Ejwkh24$",
     "driver": "com.mysql.cj.jdbc.Driver"
 }
 
@@ -27,6 +28,7 @@ dfbancos = spark.read\
     .parquet(sourcepathbancos)
 
 dfbancos.write.jdbc(url, "bancos", mode="overwrite", properties=myproperties)
+
 
 dfempregados = spark.read\
     .option("header","true")\

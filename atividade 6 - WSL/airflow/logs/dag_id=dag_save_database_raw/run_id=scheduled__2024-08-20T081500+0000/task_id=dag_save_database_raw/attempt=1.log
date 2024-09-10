@@ -1,0 +1,343 @@
+[2024-09-09T16:08:29.172-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-09-09T16:08:29.186-0300] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_save_database_raw.dag_save_database_raw scheduled__2024-08-20T08:15:00+00:00 [queued]>
+[2024-09-09T16:08:29.194-0300] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_save_database_raw.dag_save_database_raw scheduled__2024-08-20T08:15:00+00:00 [queued]>
+[2024-09-09T16:08:29.195-0300] {taskinstance.py:2865} INFO - Starting attempt 1 of 11
+[2024-09-09T16:08:29.220-0300] {taskinstance.py:2888} INFO - Executing <Task(BashOperator): dag_save_database_raw> on 2024-08-20 08:15:00+00:00
+[2024-09-09T16:08:29.223-0300] {standard_task_runner.py:72} INFO - Started process 132449 to run task
+[2024-09-09T16:08:29.225-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'dag_save_database_raw', 'dag_save_database_raw', 'scheduled__2024-08-20T08:15:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/dag_save_database_raw.py', '--cfg-path', '/tmp/tmpaxvmhfl1']
+[2024-09-09T16:08:29.227-0300] {standard_task_runner.py:105} INFO - Job 30: Subtask dag_save_database_raw
+[2024-09-09T16:08:29.279-0300] {task_command.py:467} INFO - Running <TaskInstance: dag_save_database_raw.dag_save_database_raw scheduled__2024-08-20T08:15:00+00:00 [running]> on host DESKTOP-0CT35O1.
+[2024-09-09T16:08:29.369-0300] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Matheus' AIRFLOW_CTX_DAG_ID='dag_save_database_raw' AIRFLOW_CTX_TASK_ID='dag_save_database_raw' AIRFLOW_CTX_EXECUTION_DATE='2024-08-20T08:15:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-08-20T08:15:00+00:00'
+[2024-09-09T16:08:29.371-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-09-09T16:08:29.372-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-09-09T16:08:29.374-0300] {logging_mixin.py:190} INFO - Current task name:dag_save_database_raw state:running start_date:2024-09-09 19:08:29.187667+00:00
+[2024-09-09T16:08:29.375-0300] {logging_mixin.py:190} INFO - Dag name:dag_save_database_raw and current dag run status:running
+[2024-09-09T16:08:29.376-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2024-09-09T16:08:29.378-0300] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2024-09-09T16:08:29.381-0300] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', "python '/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/save_database.py'"]
+[2024-09-09T16:08:29.386-0300] {subprocess.py:86} INFO - Output:
+[2024-09-09T16:08:34.470-0300] {subprocess.py:93} INFO - 24/09/09 16:08:34 WARN Utils: Your hostname, DESKTOP-0CT35O1 resolves to a loopback address: 127.0.1.1; using 10.255.255.254 instead (on interface lo)
+[2024-09-09T16:08:34.474-0300] {subprocess.py:93} INFO - 24/09/09 16:08:34 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+[2024-09-09T16:08:34.998-0300] {subprocess.py:93} INFO - 24/09/09 16:08:34 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-09-09T16:08:35.208-0300] {subprocess.py:93} INFO - Setting default log level to "WARN".
+[2024-09-09T16:08:35.210-0300] {subprocess.py:93} INFO - To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+[2024-09-09T16:08:43.048-0300] {subprocess.py:93} INFO - [Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:>                                                          (0 + 1) / 1]                                                                                24/09/09 16:08:43 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[2024-09-09T16:08:43.426-0300] {subprocess.py:93} INFO - 24/09/09 16:08:43 ERROR Executor: Exception in task 0.0 in stage 2.0 (TID 2)
+[2024-09-09T16:08:43.428-0300] {subprocess.py:93} INFO - org.apache.spark.SparkException: Parquet column cannot be converted in file file:///mnt/c/users/teu20/Documents/Poli/Dados/Raw/empregados/part-00000-ef92445d-d373-4a30-bbf7-dd1f523fde46-c000.snappy.parquet. Column: [reviews_count], Expected: int, Found: BINARY.
+[2024-09-09T16:08:43.429-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.errors.QueryExecutionErrors$.unsupportedSchemaColumnConvertError(QueryExecutionErrors.scala:855)
+[2024-09-09T16:08:43.431-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:287)
+[2024-09-09T16:08:43.432-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+[2024-09-09T16:08:43.433-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+[2024-09-09T16:08:43.434-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+[2024-09-09T16:08:43.435-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+[2024-09-09T16:08:43.437-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+[2024-09-09T16:08:43.438-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+[2024-09-09T16:08:43.439-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+[2024-09-09T16:08:43.440-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+[2024-09-09T16:08:43.442-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+[2024-09-09T16:08:43.443-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+[2024-09-09T16:08:43.444-0300] {subprocess.py:93} INFO - 	at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+[2024-09-09T16:08:43.446-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:684)
+[2024-09-09T16:08:43.447-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)
+[2024-09-09T16:08:43.449-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)
+[2024-09-09T16:08:43.450-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+[2024-09-09T16:08:43.452-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+[2024-09-09T16:08:43.453-0300] {subprocess.py:93} INFO - 	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)
+[2024-09-09T16:08:43.454-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+[2024-09-09T16:08:43.456-0300] {subprocess.py:93} INFO - 	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+[2024-09-09T16:08:43.457-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+[2024-09-09T16:08:43.458-0300] {subprocess.py:93} INFO - 	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+[2024-09-09T16:08:43.459-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+[2024-09-09T16:08:43.460-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+[2024-09-09T16:08:43.462-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+[2024-09-09T16:08:43.463-0300] {subprocess.py:93} INFO - 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+[2024-09-09T16:08:43.464-0300] {subprocess.py:93} INFO - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[2024-09-09T16:08:43.465-0300] {subprocess.py:93} INFO - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[2024-09-09T16:08:43.467-0300] {subprocess.py:93} INFO - 	at java.base/java.lang.Thread.run(Thread.java:829)
+[2024-09-09T16:08:43.468-0300] {subprocess.py:93} INFO - Caused by: org.apache.spark.sql.execution.datasources.SchemaColumnConvertNotSupportedException: column: [reviews_count], physicalType: BINARY, logicalType: int
+[2024-09-09T16:08:43.470-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.ParquetVectorUpdaterFactory.constructConvertNotSupportedException(ParquetVectorUpdaterFactory.java:1136)
+[2024-09-09T16:08:43.471-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.ParquetVectorUpdaterFactory.getUpdater(ParquetVectorUpdaterFactory.java:199)
+[2024-09-09T16:08:43.472-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedColumnReader.readBatch(VectorizedColumnReader.java:175)
+[2024-09-09T16:08:43.473-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedParquetRecordReader.nextBatch(VectorizedParquetRecordReader.java:342)
+[2024-09-09T16:08:43.475-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedParquetRecordReader.nextKeyValue(VectorizedParquetRecordReader.java:233)
+[2024-09-09T16:08:43.476-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.RecordReaderIterator.hasNext(RecordReaderIterator.scala:39)
+[2024-09-09T16:08:43.477-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+[2024-09-09T16:08:43.478-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:283)
+[2024-09-09T16:08:43.479-0300] {subprocess.py:93} INFO - 	... 28 more
+[2024-09-09T16:08:43.480-0300] {subprocess.py:93} INFO - 24/09/09 16:08:43 WARN TaskSetManager: Lost task 0.0 in stage 2.0 (TID 2) (10.255.255.254 executor driver): org.apache.spark.SparkException: Parquet column cannot be converted in file file:///mnt/c/users/teu20/Documents/Poli/Dados/Raw/empregados/part-00000-ef92445d-d373-4a30-bbf7-dd1f523fde46-c000.snappy.parquet. Column: [reviews_count], Expected: int, Found: BINARY.
+[2024-09-09T16:08:43.481-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.errors.QueryExecutionErrors$.unsupportedSchemaColumnConvertError(QueryExecutionErrors.scala:855)
+[2024-09-09T16:08:43.482-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:287)
+[2024-09-09T16:08:43.484-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+[2024-09-09T16:08:43.485-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+[2024-09-09T16:08:43.486-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+[2024-09-09T16:08:43.487-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+[2024-09-09T16:08:43.488-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+[2024-09-09T16:08:43.489-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+[2024-09-09T16:08:43.490-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+[2024-09-09T16:08:43.491-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+[2024-09-09T16:08:43.492-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+[2024-09-09T16:08:43.494-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+[2024-09-09T16:08:43.495-0300] {subprocess.py:93} INFO - 	at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+[2024-09-09T16:08:43.496-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:684)
+[2024-09-09T16:08:43.497-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)
+[2024-09-09T16:08:43.498-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)
+[2024-09-09T16:08:43.499-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+[2024-09-09T16:08:43.500-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+[2024-09-09T16:08:43.501-0300] {subprocess.py:93} INFO - 	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)
+[2024-09-09T16:08:43.502-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+[2024-09-09T16:08:43.503-0300] {subprocess.py:93} INFO - 	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+[2024-09-09T16:08:43.504-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+[2024-09-09T16:08:43.506-0300] {subprocess.py:93} INFO - 	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+[2024-09-09T16:08:43.507-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+[2024-09-09T16:08:43.508-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+[2024-09-09T16:08:43.509-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+[2024-09-09T16:08:43.510-0300] {subprocess.py:93} INFO - 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+[2024-09-09T16:08:43.511-0300] {subprocess.py:93} INFO - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[2024-09-09T16:08:43.512-0300] {subprocess.py:93} INFO - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[2024-09-09T16:08:43.513-0300] {subprocess.py:93} INFO - 	at java.base/java.lang.Thread.run(Thread.java:829)
+[2024-09-09T16:08:43.514-0300] {subprocess.py:93} INFO - Caused by: org.apache.spark.sql.execution.datasources.SchemaColumnConvertNotSupportedException: column: [reviews_count], physicalType: BINARY, logicalType: int
+[2024-09-09T16:08:43.515-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.ParquetVectorUpdaterFactory.constructConvertNotSupportedException(ParquetVectorUpdaterFactory.java:1136)
+[2024-09-09T16:08:43.517-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.ParquetVectorUpdaterFactory.getUpdater(ParquetVectorUpdaterFactory.java:199)
+[2024-09-09T16:08:43.518-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedColumnReader.readBatch(VectorizedColumnReader.java:175)
+[2024-09-09T16:08:43.519-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedParquetRecordReader.nextBatch(VectorizedParquetRecordReader.java:342)
+[2024-09-09T16:08:43.520-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedParquetRecordReader.nextKeyValue(VectorizedParquetRecordReader.java:233)
+[2024-09-09T16:08:43.521-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.RecordReaderIterator.hasNext(RecordReaderIterator.scala:39)
+[2024-09-09T16:08:43.522-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+[2024-09-09T16:08:43.523-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:283)
+[2024-09-09T16:08:43.524-0300] {subprocess.py:93} INFO - 	... 28 more
+[2024-09-09T16:08:43.526-0300] {subprocess.py:93} INFO - 
+[2024-09-09T16:08:43.527-0300] {subprocess.py:93} INFO - 24/09/09 16:08:43 ERROR TaskSetManager: Task 0 in stage 2.0 failed 1 times; aborting job
+[2024-09-09T16:08:43.557-0300] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2024-09-09T16:08:43.558-0300] {subprocess.py:93} INFO -   File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/save_database.py", line 65, in <module>
+[2024-09-09T16:08:43.559-0300] {subprocess.py:93} INFO -     dfempregados.write.jdbc(url, "empregados", mode="overwrite", properties=myproperties)
+[2024-09-09T16:08:43.560-0300] {subprocess.py:93} INFO -   File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/pyspark/sql/readwriter.py", line 1984, in jdbc
+[2024-09-09T16:08:43.561-0300] {subprocess.py:93} INFO -     self.mode(mode)._jwrite.jdbc(url, table, jprop)
+[2024-09-09T16:08:43.563-0300] {subprocess.py:93} INFO -   File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/py4j/java_gateway.py", line 1322, in __call__
+[2024-09-09T16:08:43.564-0300] {subprocess.py:93} INFO -     return_value = get_return_value(
+[2024-09-09T16:08:43.565-0300] {subprocess.py:93} INFO -   File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/pyspark/errors/exceptions/captured.py", line 179, in deco
+[2024-09-09T16:08:43.566-0300] {subprocess.py:93} INFO -     return f(*a, **kw)
+[2024-09-09T16:08:43.567-0300] {subprocess.py:93} INFO -   File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/py4j/protocol.py", line 326, in get_return_value
+[2024-09-09T16:08:43.568-0300] {subprocess.py:93} INFO -     raise Py4JJavaError(
+[2024-09-09T16:08:43.613-0300] {subprocess.py:93} INFO - py4j.protocol.Py4JJavaError: An error occurred while calling o55.jdbc.
+[2024-09-09T16:08:43.614-0300] {subprocess.py:93} INFO - : org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 2.0 failed 1 times, most recent failure: Lost task 0.0 in stage 2.0 (TID 2) (10.255.255.254 executor driver): org.apache.spark.SparkException: Parquet column cannot be converted in file file:///mnt/c/users/teu20/Documents/Poli/Dados/Raw/empregados/part-00000-ef92445d-d373-4a30-bbf7-dd1f523fde46-c000.snappy.parquet. Column: [reviews_count], Expected: int, Found: BINARY.
+[2024-09-09T16:08:43.616-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.errors.QueryExecutionErrors$.unsupportedSchemaColumnConvertError(QueryExecutionErrors.scala:855)
+[2024-09-09T16:08:43.617-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:287)
+[2024-09-09T16:08:43.618-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+[2024-09-09T16:08:43.619-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+[2024-09-09T16:08:43.620-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+[2024-09-09T16:08:43.621-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+[2024-09-09T16:08:43.622-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+[2024-09-09T16:08:43.623-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+[2024-09-09T16:08:43.624-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+[2024-09-09T16:08:43.625-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+[2024-09-09T16:08:43.627-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+[2024-09-09T16:08:43.629-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+[2024-09-09T16:08:43.630-0300] {subprocess.py:93} INFO - 	at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+[2024-09-09T16:08:43.631-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:684)
+[2024-09-09T16:08:43.632-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)
+[2024-09-09T16:08:43.633-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)
+[2024-09-09T16:08:43.634-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+[2024-09-09T16:08:43.635-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+[2024-09-09T16:08:43.636-0300] {subprocess.py:93} INFO - 	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)
+[2024-09-09T16:08:43.638-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+[2024-09-09T16:08:43.639-0300] {subprocess.py:93} INFO - 	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+[2024-09-09T16:08:43.640-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+[2024-09-09T16:08:43.641-0300] {subprocess.py:93} INFO - 	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+[2024-09-09T16:08:43.642-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+[2024-09-09T16:08:43.643-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+[2024-09-09T16:08:43.644-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+[2024-09-09T16:08:43.645-0300] {subprocess.py:93} INFO - 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+[2024-09-09T16:08:43.646-0300] {subprocess.py:93} INFO - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[2024-09-09T16:08:43.648-0300] {subprocess.py:93} INFO - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[2024-09-09T16:08:43.649-0300] {subprocess.py:93} INFO - 	at java.base/java.lang.Thread.run(Thread.java:829)
+[2024-09-09T16:08:43.650-0300] {subprocess.py:93} INFO - Caused by: org.apache.spark.sql.execution.datasources.SchemaColumnConvertNotSupportedException: column: [reviews_count], physicalType: BINARY, logicalType: int
+[2024-09-09T16:08:43.651-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.ParquetVectorUpdaterFactory.constructConvertNotSupportedException(ParquetVectorUpdaterFactory.java:1136)
+[2024-09-09T16:08:43.652-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.ParquetVectorUpdaterFactory.getUpdater(ParquetVectorUpdaterFactory.java:199)
+[2024-09-09T16:08:43.653-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedColumnReader.readBatch(VectorizedColumnReader.java:175)
+[2024-09-09T16:08:43.654-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedParquetRecordReader.nextBatch(VectorizedParquetRecordReader.java:342)
+[2024-09-09T16:08:43.655-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedParquetRecordReader.nextKeyValue(VectorizedParquetRecordReader.java:233)
+[2024-09-09T16:08:43.656-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.RecordReaderIterator.hasNext(RecordReaderIterator.scala:39)
+[2024-09-09T16:08:43.657-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+[2024-09-09T16:08:43.658-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:283)
+[2024-09-09T16:08:43.659-0300] {subprocess.py:93} INFO - 	... 28 more
+[2024-09-09T16:08:43.660-0300] {subprocess.py:93} INFO - 
+[2024-09-09T16:08:43.662-0300] {subprocess.py:93} INFO - Driver stacktrace:
+[2024-09-09T16:08:43.663-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGScheduler.failJobAndIndependentStages(DAGScheduler.scala:2856)
+[2024-09-09T16:08:43.664-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2(DAGScheduler.scala:2792)
+[2024-09-09T16:08:43.665-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGScheduler.$anonfun$abortStage$2$adapted(DAGScheduler.scala:2791)
+[2024-09-09T16:08:43.666-0300] {subprocess.py:93} INFO - 	at scala.collection.mutable.ResizableArray.foreach(ResizableArray.scala:62)
+[2024-09-09T16:08:43.667-0300] {subprocess.py:93} INFO - 	at scala.collection.mutable.ResizableArray.foreach$(ResizableArray.scala:55)
+[2024-09-09T16:08:43.668-0300] {subprocess.py:93} INFO - 	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:49)
+[2024-09-09T16:08:43.670-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:2791)
+[2024-09-09T16:08:43.671-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1(DAGScheduler.scala:1247)
+[2024-09-09T16:08:43.672-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGScheduler.$anonfun$handleTaskSetFailed$1$adapted(DAGScheduler.scala:1247)
+[2024-09-09T16:08:43.673-0300] {subprocess.py:93} INFO - 	at scala.Option.foreach(Option.scala:407)
+[2024-09-09T16:08:43.674-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:1247)
+[2024-09-09T16:08:43.675-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:3060)
+[2024-09-09T16:08:43.676-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2994)
+[2024-09-09T16:08:43.677-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:2983)
+[2024-09-09T16:08:43.678-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:49)
+[2024-09-09T16:08:43.680-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:989)
+[2024-09-09T16:08:43.681-0300] {subprocess.py:93} INFO - 	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2393)
+[2024-09-09T16:08:43.682-0300] {subprocess.py:93} INFO - 	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2414)
+[2024-09-09T16:08:43.683-0300] {subprocess.py:93} INFO - 	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2433)
+[2024-09-09T16:08:43.684-0300] {subprocess.py:93} INFO - 	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2458)
+[2024-09-09T16:08:43.685-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$1(RDD.scala:1039)
+[2024-09-09T16:08:43.686-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:151)
+[2024-09-09T16:08:43.687-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDDOperationScope$.withScope(RDDOperationScope.scala:112)
+[2024-09-09T16:08:43.688-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.withScope(RDD.scala:410)
+[2024-09-09T16:08:43.689-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.foreachPartition(RDD.scala:1037)
+[2024-09-09T16:08:43.690-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.Dataset.$anonfun$foreachPartition$1(Dataset.scala:3516)
+[2024-09-09T16:08:43.691-0300] {subprocess.py:93} INFO - 	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.java:23)
+[2024-09-09T16:08:43.692-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.Dataset.$anonfun$withNewRDDExecutionId$1(Dataset.scala:4311)
+[2024-09-09T16:08:43.693-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+[2024-09-09T16:08:43.694-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+[2024-09-09T16:08:43.695-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+[2024-09-09T16:08:43.696-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+[2024-09-09T16:08:43.697-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+[2024-09-09T16:08:43.698-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.Dataset.withNewRDDExecutionId(Dataset.scala:4309)
+[2024-09-09T16:08:43.699-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.Dataset.foreachPartition(Dataset.scala:3516)
+[2024-09-09T16:08:43.700-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.saveTable(JdbcUtils.scala:903)
+[2024-09-09T16:08:43.701-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:65)
+[2024-09-09T16:08:43.702-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:48)
+[2024-09-09T16:08:43.703-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
+[2024-09-09T16:08:43.704-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
+[2024-09-09T16:08:43.705-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
+[2024-09-09T16:08:43.706-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:107)
+[2024-09-09T16:08:43.707-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$6(SQLExecution.scala:125)
+[2024-09-09T16:08:43.708-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:201)
+[2024-09-09T16:08:43.709-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:108)
+[2024-09-09T16:08:43.710-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:900)
+[2024-09-09T16:08:43.711-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:66)
+[2024-09-09T16:08:43.712-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:107)
+[2024-09-09T16:08:43.713-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:98)
+[2024-09-09T16:08:43.714-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:461)
+[2024-09-09T16:08:43.715-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(origin.scala:76)
+[2024-09-09T16:08:43.716-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:461)
+[2024-09-09T16:08:43.717-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:32)
+[2024-09-09T16:08:43.718-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
+[2024-09-09T16:08:43.719-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
+[2024-09-09T16:08:43.720-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+[2024-09-09T16:08:43.721-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:32)
+[2024-09-09T16:08:43.722-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:437)
+[2024-09-09T16:08:43.723-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:98)
+[2024-09-09T16:08:43.725-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:85)
+[2024-09-09T16:08:43.726-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:83)
+[2024-09-09T16:08:43.727-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:142)
+[2024-09-09T16:08:43.728-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:859)
+[2024-09-09T16:08:43.729-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:388)
+[2024-09-09T16:08:43.730-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:361)
+[2024-09-09T16:08:43.731-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:248)
+[2024-09-09T16:08:43.732-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.DataFrameWriter.jdbc(DataFrameWriter.scala:756)
+[2024-09-09T16:08:43.733-0300] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[2024-09-09T16:08:43.734-0300] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[2024-09-09T16:08:43.735-0300] {subprocess.py:93} INFO - 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[2024-09-09T16:08:43.736-0300] {subprocess.py:93} INFO - 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+[2024-09-09T16:08:43.737-0300] {subprocess.py:93} INFO - 	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+[2024-09-09T16:08:43.738-0300] {subprocess.py:93} INFO - 	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:374)
+[2024-09-09T16:08:43.739-0300] {subprocess.py:93} INFO - 	at py4j.Gateway.invoke(Gateway.java:282)
+[2024-09-09T16:08:43.740-0300] {subprocess.py:93} INFO - 	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+[2024-09-09T16:08:43.741-0300] {subprocess.py:93} INFO - 	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+[2024-09-09T16:08:43.742-0300] {subprocess.py:93} INFO - 	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
+[2024-09-09T16:08:43.743-0300] {subprocess.py:93} INFO - 	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
+[2024-09-09T16:08:43.744-0300] {subprocess.py:93} INFO - 	at java.base/java.lang.Thread.run(Thread.java:829)
+[2024-09-09T16:08:43.745-0300] {subprocess.py:93} INFO - Caused by: org.apache.spark.SparkException: Parquet column cannot be converted in file file:///mnt/c/users/teu20/Documents/Poli/Dados/Raw/empregados/part-00000-ef92445d-d373-4a30-bbf7-dd1f523fde46-c000.snappy.parquet. Column: [reviews_count], Expected: int, Found: BINARY.
+[2024-09-09T16:08:43.746-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.errors.QueryExecutionErrors$.unsupportedSchemaColumnConvertError(QueryExecutionErrors.scala:855)
+[2024-09-09T16:08:43.747-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:287)
+[2024-09-09T16:08:43.748-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+[2024-09-09T16:08:43.749-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.FileSourceScanExec$$anon$1.hasNext(DataSourceScanExec.scala:593)
+[2024-09-09T16:08:43.750-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.columnartorow_nextBatch_0$(Unknown Source)
+[2024-09-09T16:08:43.751-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.catalyst.expressions.GeneratedClass$GeneratedIteratorForCodegenStage1.processNext(Unknown Source)
+[2024-09-09T16:08:43.752-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.BufferedRowIterator.hasNext(BufferedRowIterator.java:43)
+[2024-09-09T16:08:43.753-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.WholeStageCodegenEvaluatorFactory$WholeStageCodegenPartitionEvaluator$$anon$1.hasNext(WholeStageCodegenEvaluatorFactory.scala:43)
+[2024-09-09T16:08:43.754-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+[2024-09-09T16:08:43.755-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator$$anon$10.hasNext(Iterator.scala:460)
+[2024-09-09T16:08:43.756-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator.isEmpty(Iterator.scala:387)
+[2024-09-09T16:08:43.757-0300] {subprocess.py:93} INFO - 	at scala.collection.Iterator.isEmpty$(Iterator.scala:387)
+[2024-09-09T16:08:43.759-0300] {subprocess.py:93} INFO - 	at scala.collection.AbstractIterator.isEmpty(Iterator.scala:1431)
+[2024-09-09T16:08:43.760-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.savePartition(JdbcUtils.scala:684)
+[2024-09-09T16:08:43.761-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1(JdbcUtils.scala:904)
+[2024-09-09T16:08:43.762-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.$anonfun$saveTable$1$adapted(JdbcUtils.scala:903)
+[2024-09-09T16:08:43.763-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2(RDD.scala:1039)
+[2024-09-09T16:08:43.764-0300] {subprocess.py:93} INFO - 	at org.apache.spark.rdd.RDD.$anonfun$foreachPartition$2$adapted(RDD.scala:1039)
+[2024-09-09T16:08:43.765-0300] {subprocess.py:93} INFO - 	at org.apache.spark.SparkContext.$anonfun$runJob$5(SparkContext.scala:2433)
+[2024-09-09T16:08:43.766-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:93)
+[2024-09-09T16:08:43.767-0300] {subprocess.py:93} INFO - 	at org.apache.spark.TaskContext.runTaskWithListeners(TaskContext.scala:166)
+[2024-09-09T16:08:43.767-0300] {subprocess.py:93} INFO - 	at org.apache.spark.scheduler.Task.run(Task.scala:141)
+[2024-09-09T16:08:43.769-0300] {subprocess.py:93} INFO - 	at org.apache.spark.executor.Executor$TaskRunner.$anonfun$run$4(Executor.scala:620)
+[2024-09-09T16:08:43.770-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally(SparkErrorUtils.scala:64)
+[2024-09-09T16:08:43.771-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.SparkErrorUtils.tryWithSafeFinally$(SparkErrorUtils.scala:61)
+[2024-09-09T16:08:43.772-0300] {subprocess.py:93} INFO - 	at org.apache.spark.util.Utils$.tryWithSafeFinally(Utils.scala:94)
+[2024-09-09T16:08:43.773-0300] {subprocess.py:93} INFO - 	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:623)
+[2024-09-09T16:08:43.774-0300] {subprocess.py:93} INFO - 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+[2024-09-09T16:08:43.775-0300] {subprocess.py:93} INFO - 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+[2024-09-09T16:08:43.776-0300] {subprocess.py:93} INFO - 	... 1 more
+[2024-09-09T16:08:43.777-0300] {subprocess.py:93} INFO - Caused by: org.apache.spark.sql.execution.datasources.SchemaColumnConvertNotSupportedException: column: [reviews_count], physicalType: BINARY, logicalType: int
+[2024-09-09T16:08:43.778-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.ParquetVectorUpdaterFactory.constructConvertNotSupportedException(ParquetVectorUpdaterFactory.java:1136)
+[2024-09-09T16:08:43.779-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.ParquetVectorUpdaterFactory.getUpdater(ParquetVectorUpdaterFactory.java:199)
+[2024-09-09T16:08:43.780-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedColumnReader.readBatch(VectorizedColumnReader.java:175)
+[2024-09-09T16:08:43.780-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedParquetRecordReader.nextBatch(VectorizedParquetRecordReader.java:342)
+[2024-09-09T16:08:43.782-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.parquet.VectorizedParquetRecordReader.nextKeyValue(VectorizedParquetRecordReader.java:233)
+[2024-09-09T16:08:43.783-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.RecordReaderIterator.hasNext(RecordReaderIterator.scala:39)
+[2024-09-09T16:08:43.784-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.hasNext(FileScanRDD.scala:129)
+[2024-09-09T16:08:43.785-0300] {subprocess.py:93} INFO - 	at org.apache.spark.sql.execution.datasources.FileScanRDD$$anon$1.nextIterator(FileScanRDD.scala:283)
+[2024-09-09T16:08:43.786-0300] {subprocess.py:93} INFO - 	... 28 more
+[2024-09-09T16:08:43.787-0300] {subprocess.py:93} INFO - 
+[2024-09-09T16:08:44.067-0300] {subprocess.py:97} INFO - Command exited with return code 1
+[2024-09-09T16:08:44.078-0300] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-09-09T16:08:44.097-0300] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-09-09T16:08:44.098-0300] {logging_mixin.py:190} INFO - Task start:2024-09-09 19:08:29.187667+00:00 end:2024-09-09 19:08:44.097188+00:00 duration:14.909521
+[2024-09-09T16:08:44.099-0300] {logging_mixin.py:190} INFO - Task:<Task(BashOperator): dag_save_database_raw> dag:<DAG: dag_save_database_raw> dagrun:<DagRun dag_save_database_raw @ 2024-08-20 08:15:00+00:00: scheduled__2024-08-20T08:15:00+00:00, state:running, queued_at: 2024-09-09 19:08:15.143017+00:00. externally triggered: False>
+[2024-09-09T16:08:44.100-0300] {logging_mixin.py:190} INFO - Failure caused by Bash command failed. The command returned a non-zero exit code 1.
+[2024-09-09T16:08:44.102-0300] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_save_database_raw, task_id=dag_save_database_raw, run_id=scheduled__2024-08-20T08:15:00+00:00, execution_date=20240820T081500, start_date=20240909T190829, end_date=20240909T190844
+[2024-09-09T16:08:44.129-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-09-09T16:08:44.131-0300] {standard_task_runner.py:124} ERROR - Failed to execute job 30 for task dag_save_database_raw (Bash command failed. The command returned a non-zero exit code 1.; 132449)
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/operators/bash.py", line 249, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2024-09-09T16:08:44.165-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-09-09T16:08:44.177-0300] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-09-09T16:08:44.179-0300] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,176 @@
+[2024-09-09T21:00:23.997-0300] {processor.py:186} INFO - Started process (PID=261542) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:00:23.998-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:00:24.000-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:23.999-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:00:24.016-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:24.013-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:00:24.018-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:24.017-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:00:24.018-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:00:24.031-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.041 seconds
+[2024-09-09T21:00:54.705-0300] {processor.py:186} INFO - Started process (PID=262248) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:00:54.706-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:00:54.708-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:54.707-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:00:54.725-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:54.721-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:00:54.726-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:54.725-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:00:54.727-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:00:54.739-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.042 seconds
+[2024-09-09T21:01:25.892-0300] {processor.py:186} INFO - Started process (PID=262685) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:01:25.894-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:01:25.895-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:25.895-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:01:25.913-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:25.909-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:01:25.914-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:25.913-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:01:25.915-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:01:25.928-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.044 seconds
+[2024-09-09T21:01:56.661-0300] {processor.py:186} INFO - Started process (PID=263114) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:01:56.662-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:01:56.664-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:56.664-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:01:56.681-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:56.677-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:01:56.683-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:56.682-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:01:56.684-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:01:56.696-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.043 seconds
+[2024-09-09T21:02:27.369-0300] {processor.py:186} INFO - Started process (PID=263547) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:02:27.370-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:02:27.372-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:27.372-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:02:27.391-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:27.387-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:02:27.392-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:27.391-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:02:27.393-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:02:27.406-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.045 seconds
+[2024-09-09T21:02:57.873-0300] {processor.py:186} INFO - Started process (PID=263975) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:02:57.874-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:02:57.876-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:57.875-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:02:57.894-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:57.890-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:02:57.895-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:57.895-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:02:57.896-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:02:57.909-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.045 seconds
+[2024-09-09T21:03:28.407-0300] {processor.py:186} INFO - Started process (PID=264408) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:03:28.408-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:03:28.410-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:28.409-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:03:28.427-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:28.424-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:03:28.429-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:28.428-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:03:28.429-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:03:28.442-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.043 seconds
+[2024-09-09T21:03:59.015-0300] {processor.py:186} INFO - Started process (PID=264847) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:03:59.017-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:03:59.018-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:59.018-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:03:59.035-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:59.031-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:03:59.036-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:59.036-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:03:59.037-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:03:59.051-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.044 seconds
+[2024-09-09T21:04:29.505-0300] {processor.py:186} INFO - Started process (PID=265282) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:04:29.506-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:04:29.508-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:29.507-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:04:29.525-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:29.522-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:04:29.527-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:29.526-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:04:29.528-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:04:29.540-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.043 seconds
+[2024-09-09T21:04:59.938-0300] {processor.py:186} INFO - Started process (PID=266500) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:04:59.939-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:04:59.941-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:59.940-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:04:59.956-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:59.952-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:04:59.957-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:59.957-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:04:59.958-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:04:59.970-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.041 seconds
+[2024-09-09T21:05:30.388-0300] {processor.py:186} INFO - Started process (PID=267025) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:05:30.389-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:05:30.391-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:30.391-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:05:30.409-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:30.405-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:05:30.410-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:30.409-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:05:30.411-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:05:30.425-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.044 seconds
+[2024-09-09T21:06:00.836-0300] {processor.py:186} INFO - Started process (PID=267456) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:06:00.837-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:06:00.838-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:00.838-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:06:00.856-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:00.852-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:06:00.857-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:00.857-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:06:00.858-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:06:00.870-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.042 seconds
+[2024-09-09T21:06:31.398-0300] {processor.py:186} INFO - Started process (PID=267911) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:06:31.400-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:06:31.402-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:31.401-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:06:31.418-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:31.414-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:06:31.419-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:31.418-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:06:31.420-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:06:31.432-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.041 seconds
+[2024-09-09T21:07:01.799-0300] {processor.py:186} INFO - Started process (PID=268530) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:07:01.800-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:07:01.801-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:01.801-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:07:01.818-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:01.814-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:07:01.819-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:01.819-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:07:01.820-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:07:01.832-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.042 seconds
+[2024-09-09T21:07:32.175-0300] {processor.py:186} INFO - Started process (PID=269200) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:07:32.176-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:07:32.178-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:32.177-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:07:32.198-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:32.194-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:07:32.200-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:32.199-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:07:32.201-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:07:32.214-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.048 seconds
+[2024-09-09T21:08:02.701-0300] {processor.py:186} INFO - Started process (PID=269697) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:08:02.702-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2024-09-09T21:08:02.704-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:08:02.703-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:08:02.725-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:08:02.720-0300] {example_local_kubernetes_executor.py:40} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 38, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2024-09-09T21:08:02.726-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:08:02.726-0300] {example_local_kubernetes_executor.py:41} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2024-09-09T21:08:02.727-0300] {processor.py:927} WARNING - No viable dags retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2024-09-09T21:08:02.740-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/airflow_env/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.047 seconds

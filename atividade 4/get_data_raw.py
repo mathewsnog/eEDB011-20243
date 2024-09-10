@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
-import pyspark.sql.types as T 
-import pyspark.sql.functions as F
+from pyspark.sql.functions import *
+from pyspark.sql.types import *
 
 sourcepathbancos = "C:\\Users\\teu20\\Documents\\Poli\\Dados\\Source\\bancos"
 sourcepathempregados = "C:\\Users\\teu20\\Documents\\Poli\\Dados\\Source\\empregados"
@@ -17,6 +17,9 @@ df = spark.read.format("csv")\
       .option("delimiter", "\t")\
       .option("encoding", "ISO-8859-1")\
       .csv(sourcepathbancos)
+df = df.withColumn("Segmento", col("Segmento").cast(StringType()))\
+      .withColumn("CNPJ", col("CNPJ").cast(StringType()))\
+      .withColumn("Nome", col("Nome").cast(StringType()))
 
 df.write.mode("overwrite").parquet(outputpath + "\\bancos")
 
@@ -24,6 +27,31 @@ df.write.mode("overwrite").parquet(outputpath + "\\bancos")
 dfemp1 = spark.read.options(header='True', delimiter='|').csv(r"C:\Users\teu20\Documents\Poli\Dados\Source\empregados\glassdoor_consolidado_join_match_v2.csv")
 dfemp2 = spark.read.options(header='True', delimiter='|').csv(r"C:\Users\teu20\Documents\Poli\Dados\Source\empregados\glassdoor_consolidado_join_match_less_v2.csv")
 dfempfinal = dfemp1.unionByName(dfemp2, allowMissingColumns=True)
+dfempfinal = dfempfinal.withColumn("employer_name", col("employer_name").cast(StringType()))\
+                        .withColumn("reviews_count", col("reviews_count").cast(IntegerType()))\
+                        .withColumn("culture_count", col("culture_count").cast(IntegerType()))\
+                        .withColumn("salaries_count", col("salaries_count").cast(IntegerType()))\
+                        .withColumn("benefits_count", col("benefits_count").cast(IntegerType()))\
+                        .withColumn("employer-website", col("employer-website").cast(StringType()))\
+                        .withColumn("employer-headquarters", col("employer-headquarters").cast(StringType()))\
+                        .withColumn("employer-founded", col("employer-founded").cast(IntegerType()))\
+                        .withColumn("employer-industry", col("employer-industry").cast(StringType()))\
+                        .withColumn("employer-revenue", col("employer-revenue").cast(StringType()))\
+                        .withColumn("url", col("url").cast(StringType()))\
+                        .withColumn("Geral", col("Geral").cast(FloatType()))\
+                        .withColumn("Cultura e valores", col("Cultura e valores").cast(FloatType()))\
+                        .withColumn("Diversidade e inclusão", col("Diversidade e inclusão").cast(FloatType()))\
+                        .withColumn("Qualidade de vida", col("Qualidade de vida").cast(FloatType()))\
+                        .withColumn("Alta liderança", col("Alta liderança").cast(FloatType()))\
+                        .withColumn("Remuneração e benefícios", col("Remuneração e benefícios").cast(FloatType()))\
+                        .withColumn("Oportunidades de carreira", col("Oportunidades de carreira").cast(FloatType()))\
+                        .withColumn("Recomendam para outras pessoas(%)", col("Recomendam para outras pessoas(%)").cast(FloatType()))\
+                        .withColumn("Perspectiva positiva da empresa(%)", col("Perspectiva positiva da empresa(%)").cast(FloatType()))\
+                        .withColumn("Segmento", col("Segmento").cast(StringType()))\
+                        .withColumn("Nome", col("Nome").cast(StringType()))\
+                        .withColumn("match_percent", col("match_percent").cast(FloatType()))\
+                        .withColumn("CNPJ", col("CNPJ").cast(StringType()))
+
 dfempfinal.write.mode("overwrite").parquet(outputpath + "\\empregados")
 
 
@@ -34,7 +62,20 @@ df3 = spark.read.option("recursiveFileLookup", True)\
       .option("encoding", "ISO-8859-1")\
       .csv(sourcepathreclamacoes)
 df3 = df3.drop("_c14")
-df3.show(truncate = False)
+df3 = df3.withColumn("Ano", col("Ano").cast(IntegerType()))\
+      .withColumn("Trimestre", col("Trimestre").cast(StringType()))\
+      .withColumn("Categoria", col("Categoria").cast(StringType()))\
+      .withColumn("Tipo", col("Tipo").cast(StringType()))\
+      .withColumn("CNPJ IF", col("CNPJ IF").cast(StringType()))\
+      .withColumn("Instituição financeira", col("Instituição financeira").cast(StringType()))\
+      .withColumn("Índice", col("Índice").cast(StringType()))\
+      .withColumn("Quantidade de reclamações reguladas procedentes", col("Quantidade de reclamações reguladas procedentes").cast(IntegerType()))\
+      .withColumn("Quantidade de reclamações reguladas - outras", col("Quantidade de reclamações reguladas - outras").cast(IntegerType()))\
+      .withColumn("Quantidade de reclamações não reguladas", col("Quantidade de reclamações não reguladas").cast(IntegerType()))\
+      .withColumn("Quantidade total de reclamações", col("Quantidade total de reclamações").cast(IntegerType()))\
+      .withColumn("Quantidade total de clientes  CCS e SCR", col("Quantidade total de clientes  CCS e SCR").cast(IntegerType()))\
+      .withColumn("Quantidade de clientes  CCS", col("Quantidade de clientes  CCS").cast(IntegerType()))\
+      .withColumn("Quantidade de clientes  SCR", col("Quantidade de clientes  SCR").cast(IntegerType()))
 
 df3.write.mode("overwrite").parquet(outputpath + "\\reclamacoes")
 

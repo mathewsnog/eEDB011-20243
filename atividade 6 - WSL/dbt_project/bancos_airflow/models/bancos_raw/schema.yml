@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+
+  - name: mydb
+    schema: mydb
+    tables:
+      - name: bancos
+      - name: empregados
+      - name: reclamacoes

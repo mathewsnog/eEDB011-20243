@@ -1,0 +1,112 @@
+[2024-09-09T21:00:19.980-0300] {processor.py:186} INFO - Started process (PID=261336) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:00:19.981-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:00:19.983-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:19.982-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:00:19.997-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:00:20.013-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:20.012-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:00:20.025-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:20.024-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:00:20.038-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.065 seconds
+[2024-09-09T21:00:50.521-0300] {processor.py:186} INFO - Started process (PID=261933) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:00:50.522-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:00:50.524-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:50.523-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:00:50.537-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:00:50.556-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:50.555-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:00:50.568-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:00:50.567-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:00:50.583-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.069 seconds
+[2024-09-09T21:01:21.039-0300] {processor.py:186} INFO - Started process (PID=262478) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:01:21.040-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:01:21.043-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:21.042-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:01:21.057-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:01:21.076-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:21.075-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:01:21.089-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:21.088-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:01:21.104-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.073 seconds
+[2024-09-09T21:01:52.101-0300] {processor.py:186} INFO - Started process (PID=262913) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:01:52.102-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:01:52.103-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:52.103-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:01:52.117-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:01:52.134-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:52.133-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:01:52.146-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:01:52.145-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:01:52.160-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.067 seconds
+[2024-09-09T21:02:22.428-0300] {processor.py:186} INFO - Started process (PID=263342) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:02:22.429-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:02:22.431-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:22.430-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:02:22.444-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:02:22.463-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:22.462-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:02:22.475-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:22.475-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:02:22.489-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.069 seconds
+[2024-09-09T21:02:53.202-0300] {processor.py:186} INFO - Started process (PID=263774) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:02:53.203-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:02:53.204-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:53.204-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:02:53.217-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:02:53.234-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:53.233-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:02:53.246-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:02:53.245-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:02:53.259-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.065 seconds
+[2024-09-09T21:03:23.804-0300] {processor.py:186} INFO - Started process (PID=264207) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:03:23.805-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:03:23.807-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:23.806-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:03:23.822-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:03:23.843-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:23.842-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:03:23.858-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:23.857-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:03:23.875-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.079 seconds
+[2024-09-09T21:03:54.127-0300] {processor.py:186} INFO - Started process (PID=264644) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:03:54.128-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:03:54.130-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:54.129-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:03:54.144-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:03:54.161-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:54.161-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:03:54.174-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:03:54.173-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:03:54.188-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.069 seconds
+[2024-09-09T21:04:24.378-0300] {processor.py:186} INFO - Started process (PID=265079) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:04:24.379-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:04:24.381-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:24.380-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:04:24.396-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:04:24.415-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:24.414-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:04:24.430-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:24.429-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:04:24.444-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.074 seconds
+[2024-09-09T21:04:54.742-0300] {processor.py:186} INFO - Started process (PID=266230) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:04:54.743-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:04:54.745-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:54.744-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:04:54.759-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:04:54.778-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:54.777-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:04:54.790-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:04:54.789-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:04:54.803-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.070 seconds
+[2024-09-09T21:05:25.284-0300] {processor.py:186} INFO - Started process (PID=266822) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:05:25.286-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:05:25.288-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:25.287-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:05:25.302-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:05:25.321-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:25.321-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:05:25.335-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:25.334-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:05:25.349-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.073 seconds
+[2024-09-09T21:05:55.869-0300] {processor.py:186} INFO - Started process (PID=267253) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:05:55.870-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:05:55.872-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:55.871-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:05:55.886-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:05:55.903-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:55.903-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:05:55.916-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:05:55.915-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:05:55.931-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.070 seconds
+[2024-09-09T21:06:26.389-0300] {processor.py:186} INFO - Started process (PID=267683) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:06:26.390-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:06:26.392-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:26.392-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:06:26.407-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:06:26.424-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:26.423-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:06:26.436-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:26.435-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:06:26.450-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.069 seconds
+[2024-09-09T21:06:56.861-0300] {processor.py:186} INFO - Started process (PID=268328) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:06:56.862-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:06:56.864-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:56.864-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:06:56.877-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:06:56.894-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:56.893-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:06:56.906-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:06:56.906-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:06:56.922-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.069 seconds
+[2024-09-09T21:07:27.241-0300] {processor.py:186} INFO - Started process (PID=268998) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:07:27.242-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:07:27.244-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:27.243-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:07:27.257-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:07:27.274-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:27.273-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:07:27.285-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:27.285-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:07:27.298-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.065 seconds
+[2024-09-09T21:07:57.912-0300] {processor.py:186} INFO - Started process (PID=269495) to work on /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:07:57.913-0300] {processor.py:914} INFO - Processing file /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py for tasks to queue
+[2024-09-09T21:07:57.915-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:57.914-0300] {dagbag.py:587} INFO - Filling up the DagBag from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:07:57.928-0300] {processor.py:925} INFO - DAG(s) 'get_data_raw' retrieved from /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py
+[2024-09-09T21:07:57.945-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:57.944-0300] {dag.py:3229} INFO - Sync 1 DAGs
+[2024-09-09T21:07:57.957-0300] {logging_mixin.py:190} INFO - [2024-09-09T21:07:57.956-0300] {dag.py:4156} INFO - Setting next_dagrun for get_data_raw to 2024-08-09 08:15:00+00:00, run_after=2024-08-10 08:15:00+00:00
+[2024-09-09T21:07:57.970-0300] {processor.py:208} INFO - Processing /mnt/c/Users/teu20/Documents/Poli/Repo/eEDB011-20243/atividade 6 - WSL/airflow/dags/dag_get_data_raw.py took 0.065 seconds
